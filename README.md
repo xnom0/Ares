@@ -18,9 +18,9 @@ Le format de fichier résultant est .ares.
 
 ## Utilisation :
 
-`ares generate` : Permet de crée une pair de clé 
-`ares compress fichier_original.ext fichier_compresser [0-9]`
-`ares decompress fichier_compresser.ares fichier_original.ext`
+ares generate : Permet de crée une pair de clé 
+ares compress fichier_original.ext fichier_compresser [0-9]
+ares decompress fichier_compresser.ares fichier_original.ext
 
 par defaut la clé privé et publique doivent etre dans le meme dossier que l'outil sinon il faut spécifier l'emplacement de la clé :
 
