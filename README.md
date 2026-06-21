@@ -8,6 +8,8 @@ Il combine trois étapes puissantes dans un seul flux :
 
 Le format de fichier résultant est .ares.
 
+<img width="544" height="227" alt="ares" src="https://github.com/user-attachments/assets/5053fccc-d094-48f0-a8e8-433fff4716a5" />
+
 ## Compilation depuis GNU/Linux pour GNU/Linux : 
 
 `CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o ares`
