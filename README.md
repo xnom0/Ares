@@ -32,5 +32,5 @@ Decompresser u fichier / dossier
 
 par défaut, la clé privée et publique doivent être dans le même dossier que l'outil, sinon il faut spécifier l'emplacement de la clé :
 
-`ares compress fichier_original.ext fichier_compresser [0-9] /opt/mykey.pub
-ares decompress fichier_compresser.ares fichier_original.ext /opt/mykey.priv`
+`ares compress fichier_original.ext fichier_compresser [0-9] /opt/mykey.pub`
+`ares decompress fichier_compresser.ares fichier_original.ext /opt/mykey.priv`
