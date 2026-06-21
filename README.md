@@ -8,21 +8,21 @@ Il combine trois étapes puissantes dans un seul flux :
 
 Le format de fichier résultant est .ares.
 
-# Compilation depuis GNU/Linux pour GNU/Linux : 
+## Compilation depuis GNU/Linux pour GNU/Linux : 
 
-- CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o ares
+`CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o ares`
 
-# Compilation depuis GNU/Linux pour Windows : 
+## Compilation depuis GNU/Linux pour Windows : 
 
-- CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o ares.exe
+`CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o ares.exe`
 
-# Utilisation :
+## Utilisation :
 
-ares generate : Permet de crée une pair de clé 
+`ares generate : Permet de crée une pair de clé 
 ares compress fichier_original.ext fichier_compresser [0-9] selon le mode et la vitesse de compression
-ares decompress fichier_compresser.ares fichier_original.ext
+ares decompress fichier_compresser.ares fichier_original.ext`
 
 par defaut la clé privé et publique doivent etre dans le meme dossier que l'outil sinon il faut spécifier l'emplacement de la clé :
 
-ares compress fichier_original.ext fichier_compresser [0-9] /opt/mykey.pub
-ares decompress fichier_compresser.ares fichier_original.ext /opt/mykey.priv
+`ares compress fichier_original.ext fichier_compresser [0-9] /opt/mykey.pub
+ares decompress fichier_compresser.ares fichier_original.ext /opt/mykey.priv`
